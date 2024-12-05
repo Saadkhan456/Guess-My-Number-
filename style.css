@@ -14,7 +14,10 @@ body {
   font-family: "Press Start 2P", sans-serif;
   color: #eee;
   background-color: #222;
+  /* background-color: #60b347; */
 }
+
+/* LAYOUT */
 header {
   position: relative;
   height: 35vh;
@@ -30,6 +33,8 @@ main {
   justify-content: center;
   text-align: center;
 }
+
+/* Adjust layout for larger screens */
 @media (min-width: 768px) {
   main {
     flex-direction: row;
@@ -42,7 +47,7 @@ main {
   }
 }
 
-
+/* ELEMENTS STYLE */
 h1 {
   font-size: 4rem;
   text-align: center;
@@ -116,6 +121,8 @@ h1 {
 .label-score {
   margin-bottom: 2rem;
 }
+
+/* Responsive typography */
 @media (max-width: 600px) {
   h1 {
     font-size: 3rem;
@@ -136,5 +143,19 @@ h1 {
   .btn {
     font-size: 1.5rem;
     padding: 1.5rem 2.5rem;
+  }
+
+  .between,
+  .again {
+    font-size: 1.2rem;
+    top: 1rem;
+  }
+
+  .between {
+    right: 1rem;
+  }
+
+  .again {
+    left: 1rem;
   }
 }
